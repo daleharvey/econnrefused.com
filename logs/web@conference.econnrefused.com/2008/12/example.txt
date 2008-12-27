@@ -1,0 +1,617 @@
+[10:29:38] <dale> Quote
+[10:29:41] <dale> !quote
+[10:29:41] <chatbot> dale: The marvelous richness of human experience would lose something of rewarding joy if there were no limitations to overcome. The hilltop hour would not be half so wonderful if there were no dark valleys to traverse.
+[10:30:13] dale leaves the room
+[10:30:19] dale joins the room
+[10:30:44] <dale> <hello>
+[10:47:57] <constant> sup
+[10:47:57] psi joins the room
+[10:48:19] <dale> yo, not much, going to do those stats things today
+[10:48:29] <psi> .
+[10:49:14] <dale> !quote
+[10:49:14] <chatbot> dale: I am about courting a girl I have had but little acquaintance with. How shall I come to a knowledge of her faults, and whether she has the virtues I imagine she has? Answer. Commend her among her female acquaintances.
+[10:49:20] <psi> !fortune
+[10:49:20] <chatbot> psi: I am a deeply superficial person.
+		-- Andy Warhol
+
+[10:49:41] <dale> heh thats what I wanted ^ check if newlines work
+[10:52:07] <constant> I'm a little addicted to fantastic contraption
+[11:33:12] <psi> !fortune
+[11:33:12] <chatbot> psi: What they said:
+	What they meant:
+
+"I recommend this candidate with no qualifications whatsoever."
+	(Yes, that about sums it up.)
+"The amount of mathematics she knows will surprise you."
+	(And I recommend not giving that school a dime...)
+"I simply can't say enough good things about him."
+	(What a screw-up.)
+"I am pleased to say that this candidate is a former colleague of mine."
+	(I can't tell you how happy I am that she left our firm.)
+"When this person left our employ, we were quite hopeful he would go
+a long way with his skills."
+	(We hoped he'd go as far as possible.)
+"You won't find many people like her."
+	(In fact, most people can't stand being around her.)
+"I cannot recommend him too highly."
+	(However, to the best of my knowledge, he has never committed a
+	 felony in my presence.)
+
+[11:33:18] <psi> man these fortunes are toooo long
+[11:34:08] <dale> lol, yeh I added a bunch and it all seems to be long ones
+[11:39:24] <dale> that one wasnt very funny either
+[11:39:53] <psi> this framework is such a joy to work with
+[11:39:54] <psi> :D
+[11:46:21] <psi> it makes PHP enjoyable, ;)
+[11:46:39] <dale> I might use it for the econnrefused site
+[11:46:51] <dale> although nothing is dynamic right now, so kinda pointless :P
+[11:50:30] <psi> nooooo
+[11:50:35] <psi> even if its not dynamic
+[11:50:36] <psi> it rocks
+[11:50:46] <psi> my VIEW set up is very sexy :)
+[11:51:14] <psi> none of that require 'header/footer.php'; crap
+[11:51:45] <psi> the page is built "fractaly"? instead of procedurally
+[11:52:53] <psi> i like how ubuntu only pre-selects the name of a file when you hit RENAME
+[11:53:02] <psi> and not the extension :)
+[12:01:01] <psi> the way the CSS is split aswell is nice
+[12:01:11] <psi> but i think you like single sheet setup..
+[12:01:44] <psi> i prefer a 2 sheet setup, 1 sheet per page that imports a common one
+[12:03:18] <dale> yeh I usually cant be bother, I dont really do big web sites so thas just extra work
+[12:03:35] <psi> yea i understand
+[12:03:49] <psi> my setup isnt aimed at a 5 page static site
+[12:03:59] <psi> medium sized dynamic ones
+[12:04:42] <psi> its similar concept to ubuntus apache filesystem set up
+[12:04:45] <psi> to think about it
+[12:09:10] <dale> didnt take much to write
+[12:09:11] <dale> http://econnrefused.com/logs/22.txt
+[12:09:52] <psi> whats that for?
+[12:10:11] <dale> make a graph of how active the converations are :p
+[12:10:19] <dale> at what times etc
+[12:12:23] <psi> hey, can you think of an easy fast way to do this in jquery
+[12:12:35] <psi> when i type in one field, it writes it into another field aswell
+[12:13:46] <dale> $(".firstinput").bind("mouseup keypress",function() { $("secondinput").val($this).val()); });
+[12:14:57] <psi> :D
+[12:15:00] <psi> lemme try that
+[12:15:57] <psi> can you select by name
+[12:16:00] <psi> instead of class
+[12:16:10] <dale> input[name=aname]
+[12:16:15] <psi> ok cool
+[12:16:24] <psi> man i need to take a day and learn all this stuff
+[12:16:46] <dale> http://pastebin.me/494f851ef12d9
+[12:17:57] <psi> awesome, thanks
+[12:18:00] <psi> i owe you one :P
+[12:19:33] <psi> hmm
+[12:19:40] <psi> theres no built in TRIM function in js?
+[12:22:11] <dale> coming to think of it, never really use one, dunno
+[12:22:30] <psi> aparently not
+[12:22:33] <psi> googled js trim
+[12:22:40] <psi> and it brings up huge functions
+[12:40:12] <dale> !quote
+[12:40:12] <chatbot> dale: I made my money by selling too soon.
+[12:45:33] dale leaves the room: Replaced by new connection
+[12:45:34] dale joins the room
+[12:46:13] <dale> lol @ owe me one
+[12:46:20] <dale> it took a whole 40 seconds to type :p
+[12:53:08] <psi> :D
+[12:53:17] <psi> yea well it would have taken me 30 minutes of searching
+[12:53:41] <dale> its kinda shit that dom doesnt just have a "change" event
+[13:02:56] <dale> (12:53:18) psi: yea well it would have taken me 30 minutes of searching
+[12:53:42] dale: its kinda shit that dom doesnt just have a "change" event
+[13:04:24] <dale> lol, bit confusing
+[13:05:37] <dale> theres no way to differentiate someone writing message \n[HH:TT:MM] from sending 2 messages
+[13:19:20] sam joins the room
+[13:20:27] <dale> yo sam
+[13:20:37] <sam> hey dale, hows it going
+[13:21:29] <sam> am about to write up something for this on the googlegroup
+[13:21:31] <dale> good, finally recovered from yesterdays hangover :P
+[13:21:56] <sam> yeah, i've been blackout since about saturday sometime, end of exams i totally earned it
+[13:22:08] <dale> thats cool, cheers
+[13:22:42] <dale> Im coding up some stuff for the logs, make graphs of how busy it is and what times etc
+[13:22:53] <dale> kinda pointless but a bit fun :P
+[13:26:18] dale leaves the room: Replaced by new connection
+[13:26:18] dale joins the room
+[13:30:52] dale leaves the room: Replaced by new connection
+[13:30:52] dale joins the room
+[13:31:19] kate.ho1@gmail.com/Meebo joins the room
+[13:31:30] <kate.ho1@gmail.com/Meebo> yo
+[13:31:48] <sam> hola
+[13:31:59] <dale> hey, that was quick :P
+[13:32:06] <sam> and they all flood in...
+[13:32:07] <sam> :-)
+[13:32:26] <kate.ho1@gmail.com/Meebo> well ... i got the email, and i'm supposed to be working ...
+[13:32:33] <kate.ho1@gmail.com/Meebo> its a great procrastination tool
+[13:32:46] <kate.ho1@gmail.com/Meebo> any idea whether i could log onto here using irc?
+[13:33:51] <dale> its got an irc transport, but I think they are only outgoing connections, ie you can login to irc from xmpp but not xmpp from irc
+[13:34:52] <dale> I might chuck up an irc room and bridge it, see how man people prefer irc (I like xmpp much more) 
+[13:35:19] <sam> yeah Tane just mentioned that it sucks that he already has twitter, irc and IM open
+[13:36:33] <dale> I sit on irc as well, but just use pidgin so they are all in the same app
+[13:37:13] <sam> yeah
+[13:40:11] <dale> is there any plans for the january demos?
+[13:40:26] <dale> heh, just realised its like 3 days afer my birthday
+[13:40:34] <kate.ho1@gmail.com/Meebo> dale: yep, irc bridging would be good
+[13:41:03] <dale> ok cool, ill give that a shot after the log stuff
+[13:41:13] <sam> no plans for jan demos, lots planned for feb, but it's going to be tough to get stuff for jan
+[13:41:32] <sam> any sugges?
+[13:44:00] <dale> not off the top of my head
+[13:44:26] <dale> hasan said he has a few things he wouldnt mind demoing, so if your getting stuck give him an email
+[13:48:10] <dale> I would like to do one on ejabberd, but would really want inkscape finished before doing that, and thats not happening over the next few weeks 
+[13:51:54] tef joins the room
+[13:51:58] <sam> cool, I'll have a chat with Hasan, let me know your stuff comes along
+[13:52:18] <sam> the techest man alive enters the room...
+[13:52:25] <tef> ha
+[13:52:38] <tef> was going to reply to list 'in my day irc was good enough for chat'
+[13:52:46] <dale> lol, thats it, we need a demo on prolog interpreters 
+[13:54:26] <tef> to bore everyone ?
+[13:54:51] <psi> hey dale, can you spot an error in there
+[13:54:53] <psi> $("input[name=uri]").val($(this).val().replace(/^[\s]+/,'').replace(/[\s]+$/,'').replace(/[\s]/, '-').toLowerCase()); 
+[13:55:19] <psi> basically what im doing is when you type something, i want it to appear in anotehr field trimed, lowercased, and space changed into dash
+[13:55:53] <tef> can't you do something like ^\s*(.*)\s*$ and replace it with $1 
+[13:56:10] <psi> well, lemme give na example
+[13:56:22] <tef> sam: I was considering doing a talk on computer history
+[13:56:24] <psi> test = test, Hey There = hey-there
+[13:56:28] <psi> the problem its doing is
+[13:56:36] <psi> its only converting 1 of the inner spaces to dash
+[13:56:38] <tef> ah
+[13:56:39] <psi> its keeping the other spaces
+[13:57:06] <sam> tef: computer history?
+[13:57:08] <psi> hello there hi = hello-there hi
+[13:57:09] <tef> you need a flag
+[13:57:19] <dale> you know what I feel about regex :>
+[13:57:29] <psi> well i wouldnt be using regex
+[13:57:34] <psi> theres no damn TRIM function in js
+[13:57:51] <tef> try /[\s]/g
+[13:57:56] <psi> g, ok
+[13:58:14] <psi> success!
+[13:58:15] <dale> that works - http://pastebin.me/494f9ce6c8865
+[13:58:17] <psi> thanks
+[13:58:19] <psi> whats the G for
+[13:58:40] <psi> hmm, php regex doesnt have the same bahavior as JS
+[13:58:41] <tef> global
+[13:58:56] <tef> it means match more than once.
+[13:59:05] <tef> i means case insensitive
+[13:59:07] <psi> ah, i get it
+[13:59:22] <psi> like a repeater
+[13:59:36] <psi> i thought /[\s]/ would find all of em
+[13:59:58] <psi> yea it works with G
+[14:00:02] <psi> @ren
+[14:00:02] <tef> sam: well, most people know of people like bill gates and steve jobs, but not of people like alan kay, and douglas englebert
+[14:00:30] <sam> true, is it important that they even know any of these people?
+[14:00:33] <tef> maybe
+[14:00:47] <tef> one invented the mouse, the hyperlink, videoconferencing
+[14:01:08] <tef> see: http://en.wikipedia.org/wiki/The_Mother_of_All_Demos
+[14:01:26] <tef> the other invented smalltalk, and popularised object orientation as a result.
+[14:01:42] <psi> theres a steve jobs interview on youtube
+[14:01:46] <psi> that talks about the demo
+[14:02:06] <psi> aparently he didnt care for OOP, he was only interested in demo 1, the interface
+[14:02:22] <tef> You mean the xerox demo
+[14:02:27] <tef> that isn't the mother of all demos
+[14:02:46] <psi> oh
+[14:03:09] <psi> which one came first?
+[14:03:19] <tef> he would have been 13 when the mother of all demos happened
+[14:03:32] <tef> (in 1968)
+[14:03:46] <tef> xerox showed apple their stuff in the early 80's
+[14:05:06] <psi> hey dale, what does the coloring mean here anyways?
+[14:05:09] <tef> From 1981 - the xerox star "It was the first commercial system to incorporate various technologies that today have become commonplace in personal computers, including a bitmapped display, a window-based graphical user interface, icons, folders, mouse, Ethernet networking, file servers, print servers and e-mail."
+[14:05:54] <dale> thats just the client, i think it just assigns a user a random color
+[14:06:20] <tef> aaanyway, there are a bunch of innovative things that don't tend to get mentioned in computing history, and it is a bit worrying to think that computers haven't changed significantly in how people use them since 1980
+[14:07:02] <sam> innovative things that don't get mentioned, and don't get used??
+[14:07:20] <tef> the mouse, email and hyperlink were pretty innovative in 1968
+[14:08:00] <dale> but theres multitouch now!
+[14:08:04] <tef> heh
+[14:08:05] <psi> size has changed since the 80s! :D
+[14:08:13] <psi> remember those big cellphones?
+[14:08:45] <dale> I tried to do my dissertation on building a 3d webbrowser
+[14:08:47] <tef> heh
+[14:09:02] <tef> http://www.thocp.net/hardware/pictures/xerox_star.jpg
+[14:09:27] <dale> failed at that reasonably quickly
+[14:09:54] <tef> sam: a lot of early ideas were a bit too good for their time, and are only starting to get mainstream adoption now
+[14:10:56] <tef> but I figured it might make a little more of an interesting talk (computing pioneers) rather than something horribly techie
+[14:14:07] <tef> heh, there's a mental diagram here: http://xeroxstar.tripod.com/figure1.gif
+[14:15:22] <dale> I just typed var F = function() in erlang :|
+[14:15:50] <psi> ?
+[14:16:15] <sam> sorry i'm on a few calls, give me a sec
+[14:16:20] <dale> that means im doing too much javascript 
+[14:16:23] <psi> yea
+[14:16:28] <psi> i was just thinking that atm
+[14:16:33] <psi> cept with php and js
+[14:16:40] <psi> was reading on the differences
+[14:17:07] <psi> regex differences*
+[14:17:34] <tef> there are two main types of regex - posix and perl
+[14:17:45] <psi> js is posix based?
+[14:17:59] <tef> likely perl
+[14:18:22] <sam>  tef: sam: a lot of early ideas were a bit too good for their time, and are only starting to get mainstream adoption now
+[14:18:24] <psi> like the G modifier
+[14:18:27] <psi> dont need it in php
+[14:18:35] <sam> if you can talk about those, i can see everyone liking that
+[14:18:49] <tef> yeah, well php is pretty much the fingerpainting of the programming world :)
+[14:18:50] <sam> i would be not totally for a general history lesson on computers
+[14:18:55] <psi> :D
+[14:19:06] <dale> gordon already did that :P
+[14:19:10] <psi> thats why its awesome 8-)
+[14:19:26] <tef> dale: and missed a few bits and pieces, like the Z3 for instance
+[14:19:27] <sam> but if it were a history lesson with an outline on what was way before its time and what could now be used/accepted, that's got value
+[14:20:08] <tef> sam: well, I was thinking of doing a history of the gui, focusing on things like NLS, xerox in terms of how these influential things never saw mainstream adoption
+[14:20:45] <tef> I guess I've been reading too much of 'the humane interface' this week
+[14:22:02] <tef> but, heh I guess if it isn't too techie it can be done at the tech meet :P
+[14:23:35] <sam> it's not the level of tech that I'm concerned with, if some people don't understand it because it's too techie, they should perhaps just know more, I just mean a history lesson isn't too entertaining for people, it has to have a bit more purpose to get peoples attention i.e. what historically was too ahead of its time but we're not at an appropriate time for it to be exploited
+[14:23:51] <sam> now at^
+[14:25:11] <tef> that latter point is an open question
+[14:25:38] <tef> how about 'failures of innovation - too smart, too soon'
+[14:28:09] <dale> got any examples for the "too soon", stuff?
+[14:28:11] <tef> or I'll just not do anything and continue to rant indiscriminately
+[14:28:27] <tef> http://en.wikipedia.org/wiki/Dynabook
+[14:28:31] <sam> haha no i think you should do something, and yeah 'failures of innovation' is cool
+[14:28:46] <sam> you know what i mean, it just needs a useful focus, rather than an education lesson?
+[14:28:47] <dale> heh, olpc
+[14:29:29] <sam> the indiscrimate ranter should be doing a presentation i think, i bet people really want a chance to tear some of your stuff apart!
+[14:29:39] <tef> heh
+[14:29:40] <sam> oops, not to make it scary or anything.. :-)
+[14:29:46] <tef> nah I like a challenge
+[14:29:55] <sam> cool
+[14:29:58] <tef> the xerox star is a bit of a classic 'too soon'
+[14:30:18] <tef> things like ethernet, postscript and the modern gui all came from there but xerox failed to market it at all
+[14:30:29] <tef> and all the talent left and went to other companies
+[14:44:43] psi leaves the room
+[14:53:17] dreamless joins the room
+[14:55:31] <sam> ebook readers have rss, that sweet
+[14:55:37] <sam> newspapers are truly dead
+[14:56:05] <tef> unlikely - I don't think the ebook will put the sun out of business any time soon
+[14:56:22] <dale> ive been dying to get an ebook reader for a while
+[14:56:47] <sam> yeah, my laptop has crap battery, i think i'm gona get one
+[14:56:50] <dale> I was thinking the new sony one came out in america the other month, ill wait till it gets here
+[14:57:00] <sam> but i know as soon as i get one, much better ones will come out
+[14:57:10] <sam> the available ones are relatively shite and £££
+[14:57:14] <dale> then I realised how long it took the last sony one to get from the us to here, 2 years
+[14:57:24] <sam> you seen bebook?
+[14:57:30] <sam> mybebook.com
+[14:58:27] <dreamless> I'm not sure a device dedicated soley to reading can ever be massively popular
+[14:58:37] <tef> books, eh.
+[14:58:51] <dreamless> Kindle and their ilk seem like crippled tablet PC's
+[14:58:57] <sam> yeah, but pdfs, word docs, rss, like not just leisure reading
+[14:59:01] <dale> eventually laptops will get good enough for them to be redundant, but that isnt happening any time soon
+[14:59:17] <tef> i'm waiting for a netbook with built in 3g modem
+[14:59:22] <dale> yeh the big thing with the bebook, and the old sony, is no search
+[14:59:58] <dale> since you dont have a sense of position, and the page turn is reasonably slow, i think search is pretty much a must have
+[15:01:08] <dale> plus, in built light seems pretty obvious feature
+[15:02:02] <sam> yeah they're like pushing that eink doesn't need a backlight to view it, but i hope some of them actually have it for dark places...idiots
+[15:02:51] <dale> the new sony one has a frontlight, not sure about the rest of them
+[15:03:32] <sam> need a vlc media player of ebook readers
+[15:04:15] <tef> heh
+[15:04:21] <tef> eink does not have the refresh rate
+[15:05:52] <dale> jabbers been around for a good while, wonder why its taking so long to kick off
+[15:06:16] <dale> everyone is still, irc for chat, msn+3 others for im
+[15:06:27] <tef> because it isn't tied in to larger systems, or heavily marketed
+[15:07:02] <dale> it isnt heavily marketed, dont know what you mean with larger systems though
+[15:07:23] <tef> msn - > hotmail, y! messenger -> yahoo mail, aim -> aol subscriber base
+[15:07:37] <dale> ah, true that
+[15:08:43] <sam> we should do an open source ebook reader
+[15:09:13] <tef> heh
+[15:10:10] <sam> they're all just marketed like shit, some have some good features, some are just awful, this can't be that hard, the market is potentially huge if someone can deliver
+[15:10:31] <tef> worked so well for open moko
+[15:10:34] <sam> *sam sets off to do some research into his new ebook startup*
+[15:10:40] <dale> lol
+[15:10:59] <tef> "let's build an open source phone, oh shit android"
+[15:11:31] <dale> I do agree, I spent a while looking around for them, there was no information in the slightest, let alone them actually advertising
+[15:11:55] <dale> I went into waterstones in edinburgh and they told me they didnt even sell them
+[15:11:58] <sam> what about an eink screen that just syncs with iPhone, Gphone etc
+[15:12:10] <tef> why can't you read on an iphone ?
+[15:12:34] <dale> because most people ant read backlit screens
+[15:12:37] <sam> for any reading that's more than a paragraph
+[15:12:42] <dale> I cant
+[15:13:21] <sam> phones are great, but the bottom line is that the screen is always small for obvious reasons, big flexible screens are definitely a requirement
+[15:13:40] <sam> (I admittedly don't see how eink solves this problem and have seemed to trapse into a whole different argument)
+[15:13:56] <tef> eink has high resolution, makes it easier to read
+[15:14:11] <dale> and its not backlit + has no flicker
+[15:14:27] <sam> long battery life since only needs power to change the page
+[15:14:47] <sam> and its bigger than a credit card
+[15:15:40] <sam> only black and white though
+[15:16:34] <dale> lol - http://fishbowl.pastiche.org/2008/12/21/my_2008_endofyear_tech_stock_t/
+[15:17:13] <dale> erlang - "it's possibly the best choice for large parallel systems." 
+[15:18:15] <dale> erlang really doesnt do parallel computing
+[15:19:06] <tef> heh
+[15:19:08] <tef> ssssh
+[15:19:14] <tef> well, there is disco from nokia 
+[15:19:27] <tef> I think he means 'concurrent' and not 'parallel'
+[15:23:54] <tef> http://discoproject.org/
+[15:24:43] <dale> oh, thought you were still referring to the ebook reader stuff, havent seen that, cheers
+[15:47:30] <dale> bah just realised its monday, was supposed to be getting a review copy of the new erlang book today
+[15:47:48] <tef> my prolog book arrived at work
+[15:47:50] <tef> \o/
+[15:56:41] kate.ho1@gmail.com/Meebo leaves the room
+[16:03:44] <dale> tef: you do much lisp?
+[16:04:10] <tef> I've read sicp, but I haven't done much lisp
+[16:05:37] <dale> kk, I just finished hackers and painters and have been convinced to learn it
+[16:05:50] <tef> uh-oh
+[16:06:05] <tef> have you read this? http://www.idlewords.com/2005/04/dabblers_and_blowhards.htm
+[16:06:17] <tef> p.s learn scheme if you are going to learn a lisp
+[16:06:26] <tef> clisp and elisp are quite horrible 
+[16:07:06] <dale> scheme was the one i was looking at, although erlang has a lisp frontend so Im going to try that out first
+[16:08:41] <tef> not the same
+[16:08:59] <tef> although the thing with lisp has symbolic manipulation, garbage collection and so on.
+[16:09:05] <tef> so does prolog :3
+[16:09:19] <dale> it has full macros, which is the part I was interested in
+[16:09:23] <tef> oh no!
+[16:09:28] <tef> macros are the worst thing.
+[16:09:46] <tef> hey, let's invent our own flow control, this will make it easy to collaborate with people
+[16:10:17] <tef> it means that lisp users build up a tiny dsl of their own which makes them productive, but also isolate.
+[16:10:33] <dale> not sure if it has symblic manipulation though, I though they went somewhat hand in hand with macros though
+[16:10:37] <dale> *thought
+[16:11:01] <tef> well there is things like metaocaml for instance, which supports staged compilation
+[16:12:08] <tef> but macros are overrated - being able to write your own dsl is fun, but most people can't write well or design well. I guess you can write a series of things only a mother would love, but it takes some skill to use the tools well, and most of the time they are completely unecessary
+[16:12:21] <tef> if you want to look at something fun, try learning Q which is a term re-writing language
+[16:12:49] <tef> lisp might have been special 30 years ago, but it lost it's edge
+[16:13:11] <tef> (sucks (notation 'prefix))
+[16:13:53] <tef> but scheme is fairly nice for having a small kernel to learn, and sicp is a nice book
+[16:14:04] <tef> so I would recommend reading sicp
+[16:14:09] <dale> cool
+[16:14:29] <tef> aside: if you look at what paul graham has done to scheme, he has introduced c idioms to his little dialect, arc
+[16:14:38] <tef> (post increment, post decrement for instance)
+[16:15:49] <tef> and he has unhygenic macros, which although simpler to write are generally easy to misuse and break - very leaky abstractions
+[16:15:59] <tef> which is very similar to the c pre-processor
+[16:16:08] <dale> I was going to start with arc, but put off by the fact it only has a few users and they all seem to hate it as well, I can only learn by doing something useful, seems like arc is a while off that
+[16:16:21] <tef> learn scheme! arc is a waste of time
+[16:16:35] <tef> or maybe clojure afterwards
+[16:17:03] <tef> paul graham thinks programming languages are all about the syntax, and claimed clojure was 'cheating' by using a large set of libraries
+[16:17:34] <tef> on the whole, you're better off with a small consistent language which you extend by libraries, not by syntactical extentions, as they have much less barrier to entry
+[16:18:09] <tef> but, if you write an unmaintainable lisp program, sell it to yahoo, (who then re-wrote it in perl as they could not find people to do it in lisp)
+[16:18:11] <dale> which only works if the libraries are as well designed as the core
+[16:18:32] <tef> yeah, but a poorly designed lib is still easier to use than a poorly designed syntax extention
+[16:19:19] <tef> rar!
+[16:19:28] <dale> pretty much everything I read from pg about languages is from a syntactical perspective, he doesnt seem as interested in vm's etc
+[16:20:33] <tef> he's a bit of a blowhard
+[16:20:47] <tef> http://www.paulgraham.com/hijack.html
+[16:20:53] <tef> this is a classic paul graham essay
+[16:21:08] <dale> lol, yeh that one was a bit out there
+[16:21:12] <tef> "The defense that does work is to keep code and data in separate places. Then there is no way to compromise code by playing tricks with data. Garbage-collected languages like Perl and Lisp do this, and as a result are immune from buffer overflow attacks.
+[16:21:20] <tef> you see code and data are seperate ergo lisp is awesome
+[16:21:23] <tef> hang on paul, what ?
+[16:21:28] <dale> lol
+[16:21:49] <tef> he can talk about lisp, but he lives in his own little monoculture of lisp
+[16:22:18] <tef> and any time he tries to make comparisons, the results are horrible
+[16:22:29] <tef> heh
+[16:22:38] <tef> here is a lovely call out of paul graham
+[16:22:39] <tef> http://damienkatz.net/2008/04/lisp_as_blub.html
+[16:23:59] <tef> :words:
+[16:24:13] <tef> but yeah, I think paul graham is a bit of a how to argue
+[16:24:17] <tef> wrong windoe
+[16:24:55] <tef> like his waaah I'm being trolled piece
+[16:24:56] <tef> http://www.paulgraham.com/disagree.html
+[16:25:55] <tef> also, it took him over three years to release a toy set of macros, without bothering to do things like 'use the underlying unicode support' of mzscheme
+[16:26:01] <tef> or any useful libraries
+[16:27:02] <tef> on that note, I think I'm going to head off and pick up a delivery from work
+[16:28:41] <dale> "FYI, news.ycombinator (the server software Paul is talking about) is written in Arc, on top of Scheme. There's no Lisp involved."
+[16:28:43] <dale> wtf
+[16:28:53] <tef> Yeah, some people are like that
+[16:30:06] <tef> (bbl)
+[16:30:14] <dale> catch you later
+[16:40:28] Evdawg joins the room
+[16:40:47] <Evdawg> morning!
+[16:45:11] <dale> yo Evdawg
+[16:45:38] <dale> I started doing the chatroom stats but got sidetracked :P
+[16:46:08] <Evdawg> lol
+[16:46:24] <Evdawg> i don't think we have enough logs to get stats yet :P
+[16:46:42] <Evdawg> although the room is quite full this morning, some people I haven't seen so that's good
+[17:05:52] <dale> yeh sam runs the edinburgh tech meetup, he sent an email to the list about here
+[17:11:08] <Evdawg> sweet
+[17:40:53] <dale> hmm, spotify seems to be crashing on me a lot recently
+[17:40:59] <dale> when the computer goes idle
+[18:07:53] <dale> bah @ everyone wanting irc, I think I need to do that ejabberd demo soon
+[18:08:01] <dale> get people to see the light
+[18:12:52] <dale> /s/ejabberd/jabber
+[18:32:54] dale leaves the room
+[18:38:42] <Evdawg> how is IRC <--> XMPP? I've heard of it, but is the code mature enough to work reliably?
+[18:38:47] <Evdawg> oops you're gone, :P
+[18:53:17] <tef> irc :(
+[18:53:57] <Evdawg> frankly i'd rather connect through irc, adium is (mostly) junk
+[18:54:13] <tef> well, it's better than pidgin
+[18:54:17] <tef> but if you want idlers
+[18:54:18] <tef> you want irc
+[19:00:30] tef is now known as irc_is_better
+[19:00:30] irc_is_better is now known as tef
+[19:01:34] tef is now known as irc_is_better
+[19:06:35] irc_is_better is now known as tef
+[19:06:35] tef is now known as irc_is_better
+[19:09:36] <irc_is_better> erm
+[19:09:45] <irc_is_better> also, irc supremacy!
+[19:11:36] irc_is_better is now known as tef
+[19:16:37] tef is now known as irc_is_better
+[19:21:38] irc_is_better is now known as tef
+[19:21:38] tef is now known as irc_is_better
+[19:26:33] <dreamless> ayo money
+[19:26:38] irc_is_better is now known as tef
+[19:26:38] tef is now known as irc_is_better
+[19:26:42] irc_is_better is now known as tef
+[19:26:42] tef is now known as irc_is_better
+[19:26:45] irc_is_better leaves the room
+[19:26:45] tef joins the room
+[19:26:47] tef leaves the room
+[19:35:06] dreamless leaves the room
+[19:52:00] murpheus joins the room
+[19:55:15] sam leaves the room
+[19:59:47] <murpheus> irc + backbuffer = a decent version of XMPP that isn't more verbose than stephen fry
+[19:59:54] murpheus leaves the room
+[20:08:30] dibby leaves the room: Replaced by new connection
+[20:08:30] dibby joins the room
+[20:09:53] psi joins the room
+[20:12:40] <psi> anyone here?
+[20:26:47] <Evdawg> sorta
+[20:29:20] <psi> did you play some more in IO
+[20:29:52] <Evdawg> yup I found 3 web frameworks on github
+[20:30:00] <Evdawg> each one had been comitted once and never pushed to again
+[20:30:27] <psi> doesnt sound reassuring
+[20:30:40] <psi> brb i need to reboot
+[20:31:05] psi leaves the room
+[20:32:50] psi joins the room
+[20:33:23] <psi> man wtf
+[20:33:29] <psi> im getting a Segmentation Fault
+[20:33:34] <psi> when i try to open tilda
+[20:35:56] <Evdawg> lol welcome to linux
+[20:36:02] <constant> working on a new beast, http://constant-vps.com/NEW/index.php
+[20:36:13] <psi> ev? whats that sposed to mean!
+[20:36:14] <constant> first thing we do with segmentation fault is test the memory
+[20:36:26] <Evdawg> linux stability on the desktop is a myth...
+[20:36:31] <Evdawg> especially in recent years
+[20:36:37] <constant> Evdawg:  It isn't if you manage it properly. 
+[20:36:55] <constant> It's like owning a very temperamental vehicle.
+[20:36:58] <psi> manage it properly...
+[20:37:03] <psi> i didnt play into anything
+[20:37:03] <Evdawg> well... i just want a pain-free OS, i'm not into spending time "managing" my system
+[20:37:11] <psi> i do everything via add/remove or aptitude
+[20:37:13] <constant> choose windows
+[20:37:27] <Evdawg> lol wut
+[20:37:36] <constant> That is what made windows so awesome, the time managing the o/s part.
+[20:37:54] <Evdawg> no way, i definitely used to spend more time managing windows before i made the switch
+[20:38:08] <psi> i kinda like both for different reasons
+[20:38:15] <constant> microsoft has an open source operating system in the works, forgot the links, that might be pretty awesome in a few years.
+[20:38:29] <constant> well, It is about how you manage it
+[20:38:44] <psi> ok well anyways, unisntalled tilda, anyone know if theres something similar with a different name?
+[20:39:11] <constant> I have to head to work, will check on the tilda thing if I have some wait time
+[20:39:24] <psi> how do you check tho?
+[20:39:29] <psi> you got some secret website?
+[21:28:56] dibby leaves the room: Replaced by new connection
+[21:28:57] dibby joins the room
+[21:34:29] dale joins the room
+[21:35:26] <dale> lol, managing the os is one of winders worst points
+[21:35:57] <psi> yea tilda went to hell
+[21:36:00] <psi> dunno why
+[21:36:03] <psi> its seg faulting
+[21:36:23] <dale> yeh, just delete ~/.tilda 
+[21:36:25] <psi> what was the other one you were speaking of ren?
+[21:36:39] <psi> i did a add/remove remove
+[21:36:43] <psi> same difference i reckon?
+[21:36:47] <dale> tilda is a bit shite, which is why its not in the proper repo
+[21:36:49] <dale> nup
+[21:37:18] <dale> add / remove will replace the binaries, the stuff in ~./tilda is your preferences
+[21:38:32] <psi> you think it was my preferences fucking up?
+[21:38:57] <dale> yeh, its happened a few times with me
+[21:39:07] <psi> ok, reinstall now, lets see what happens
+[21:39:19] <psi> woot!
+[21:47:26] <dale> all the tech meetup people want irc :|
+[21:48:30] <psi> so use irc
+[21:48:34] <psi> whats the difference
+[21:48:38] <psi> i mean, either ways, chat will work
+[21:50:08] <dale> I dont want just chat to work, I want to be able to program fancy crap integrated with the chat
+[21:51:21] <dale> besides, i dont want yetanotherchataccount
+[21:53:30] <dale> the only reason to use irc is because you already use it, and the clients seem to suck on a mac
+[21:53:42] <dale> but there are a ton of reasons why xmpp is better
+[22:18:33] prositenow joins the room
+[22:22:45] <prositenow> yo dale
+[22:23:06] <dale> lo prosite
+[22:23:19] <prositenow> got any new join code for me to try?
+[22:25:52] <dale> is this the connecting to chat? give it another shot
+[22:25:59] <dale> ill tail the logs, see what happens
+[22:26:08] <prositenow> just tried before i said hi
+[22:26:15] <prositenow> so it should be in there
+[22:27:23] <dale> hmm nothing, can see it authenticated, then no errors, ill give it a shot with murphs client
+[22:27:30] <prositenow> k
+[22:28:13] <dale> woohoo, you can connect to irc through your jabber accounts
+[22:32:00] <prositenow> maybe it's the <stream> that's screwing it up
+[22:35:05] <dale> can you paste the full transfer again
+[22:35:36] <prositenow> the original one i showed you yesterday is: http://pastebin.me/494e57a9ebd2e
+[22:39:55] <prositenow> this makes me think i should be terminating the <stream> with a </stream>
+[22:40:10] <prositenow> because it's just sitting there and times out -- like it's waiting for something
+[22:41:32] <dale> nah they are open streams, a whole conversations is one xml document
+[22:43:51] <prositenow> i get something different when i put a </stream:stream> on the end of my presence request
+[22:43:54] <prositenow> i'll paste it
+[22:44:39] <prositenow> http://pastebin.me/4950184be34a0
+[22:45:01] <prositenow> this is exactly the same as the previous one, just added </stream:stream> to the end of step 6
+[22:45:40] dibby leaves the room: Replaced by new connection
+[22:45:40] dibby joins the room
+[22:46:15] <dale> yeh thats just trying to create a new stream automatically
+[22:46:25] <dale> kinda like how dibby just did :p
+[22:47:13] <prositenow> still doesn't enter the room however
+[22:48:17] <dale> lol - http://econnrefused.com/logviewer/
+[22:49:57] <dale> fucking hell my internet connection is doing my head in
+[22:50:36] <prositenow> it takes 1.6 seconds with my itunes running -- half of that with my itunes paused :P
+[22:51:07] <dale> I cant even send emails
+[22:52:13] <prositenow> i didn't notice that i had a timeout on step 3 of that last one
+[22:53:43] <prositenow> i bumped up the timeout per step to 2 seconds, will paste shortly
+[22:54:20] <prositenow> http://pastebin.me/49501a8c42f5d
+[22:55:27] <prositenow> now i'm going to do it again without the </stream:stream> at th end of step 6
+[22:55:49] <prositenow> same result as before -- TIMEOUT on step 6
+[22:56:07] <prositenow> so it makes me think there's got to be a GO command or something
+[22:56:25] <dale> try not sending the <x stuff
+[22:56:31] <prositenow> k
+[22:56:31] <dale> just presence />
+[22:57:15] <prositenow> no difference, timeout on step 6
+[23:01:08] streety joins the room
+[23:02:02] <dale> cool, got murphs client connected and stuff, easier to test than telnet
+[23:02:11] <dale> hey streety
+[23:02:37] <streety> hello
+[23:03:50] dreamless joins the room
+[23:03:53] <prositenow> is he sending the same presence string?
+[23:03:56] <dreamless> streety bird?
+[23:04:17] <dale> his doesnt connect to the room yet
+[23:04:37] <prositenow> same boat as mine then?
+[23:04:58] <streety> no I'm not a bird dreamless
+[23:05:05] <dreamless> well then
+[23:05:54] <dale> bleh, emacs doesnt come with a php mode, kinda nasty
+[23:07:04] <dreamless> won't highlight syntax and such?
+[23:09:14] <dale> yeh just need to go install it now, im getting more lazy 
+[23:13:03] <psi> hey
+[23:13:10] <psi> how hard is it to install a sound card, heh
+[23:13:22] <psi> turn computer off, open it, plug it, close it, retsart?
+[23:13:28] <dale> yup
+[23:13:33] <dale> +pray
+[23:13:39] <psi> pray? o_O
+[23:14:51] <psi> bought 5.1 speakers, damn card couldnt take it
+[23:14:59] <dale> if it works, itll just work straight off, if it doesnt. then it usually isnt fun
+[23:14:59] <psi> bought some cheap 30$ one couple hours ago
+[23:15:16] <psi> think imma back up my data anyways
+[23:15:23] <psi> with my luck my harddrive will fry
+[23:16:03] <dale> hmm, jquery are adding late binding, nice
+[23:16:48] <dreamless> what's that do, Dale?
+[23:17:59] <dale> well its not really late binding, its event delegation, it means when you do $("div").click(function() { alert("hello"); }); only the ones that are currently on the page will work
+[23:18:19] <dale> if you add anything dynamically / after an ajax event etc, they wont
+[23:18:30] <dale> event delegation fixes that
+[23:20:13] <prositenow> so i guess just work on this later then dale?
+[23:20:25] <dale> prosite, giving is a shot now
+[23:20:29] <dale> *it
+[23:20:42] <prositenow> ok
+[23:21:03] dale leaves the room
+[23:21:06] dale joins the room
+[23:25:04] <dreamless> I got some awesome photos of ice today
+[23:25:06] <dreamless> on the windows
+[23:25:31] dibby leaves the room: Replaced by new connection
+[23:25:32] dibby joins the room
+[23:25:35] <dale> got them up?
+[23:25:42] <dale> I havent been out shooting in ages
+[23:26:11] <dale> some japanese music people emailed me the other day wanting to use one of my photos in a video, wtf
+[23:26:48] <dreamless> I'll put them up in a minute
+[23:26:58] <dreamless> that's cool. you gonna do?
+[23:27:04] <dale> prosite, its giving me back <stream:features><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></stream:features>
+[23:27:14] <dale> which makes no sense, but at least it isnt a timeout
+[23:27:40] <prositenow> how long did it take
+[23:27:57] <dale> yeh I just said go for it http://www.myspace.com/toshioffice is them
+[23:28:13] <dale> no time
+[23:28:38] <prositenow> can you show me your sent/received stuff after you get back <success>
+[23:29:25] <dale> http://pastebin.me/495022cc74a9c
+[23:30:48] <dale> there must be more in the session initiation 
+[23:30:58] <psi> argh CRAP
+[23:31:04] <psi> i HATE playing into my computer
+[23:31:16] <psi> i always think im breaking everything
+[23:32:12] <dale> oh wait, murph hadnt cleared that stuff, ignore me, one second
+[23:33:51] <dale> ok, now getting the timeout
+[23:34:22] <dale> you need to create a session
+[23:35:29] <prositenow> see, that's what i thought -- 
+[23:35:38] <prositenow> i thought maybe the id coming back might be a session id or something
+[23:45:20] <dale> nah the id coming back is a stream id, the session id is seperate, i think you need to hold the session id and increment it, but the stream one you dont touch
+[23:45:48] <dale> i think your supposed to send <iq to='econnrefused.com' type='set' id='sess_1'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></iq>
+[23:46:02] <dale> but im not getting anything back from that
+[23:46:34] sam joins the room
+[23:46:46] sam leaves the room
+[23:55:45] <dreamless> I think murf is boycotting the room
+[23:56:10] <prositenow> i think you're high
+[23:56:20] psi leaves the room
+[23:56:23] <prositenow> he's tired from the auth stuff though i think
+[23:57:07] <dreamless> auth stuff?
+[23:57:24] <prositenow> yeah, we've been writing code for authing into the room
+[23:57:34] <prositenow> auth=authorizing, logging in, etc.
+[23:57:36] <dale> heh he asked me why I hadnt committed anything, I dont even know what his bots for :p 
+[23:57:46] <dreamless> all I do is start pidgin and double click "web"
+[23:57:53] <dreamless> takes a total of 2 double-clicks
+[23:57:59] <prositenow> he was just trying to participate dale, i don't think he had anything in mind for himself
+[23:58:02] <dale> but its kinda useful to have, so working on it for a bit now
+[23:58:12] <prositenow> nah dream, stuff so we can integrate a web site with the room
+[23:58:40] <dale> dreamless: nah they mean writing clients that will automatically login and query stuff, and stuff
+[23:59:36] <dreamless> oh ok

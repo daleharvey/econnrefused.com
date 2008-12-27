@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>Chat Log Viewer</title>
+    
+    <!--[if IE]><script language="javascript" type="text/javascript" src="priv/flot/excanvas.pack.js"></script><![endif]-->
+    <script type="text/javascript" src="priv/jquery.js"></script>
+    <script type="text/javascript" src="priv/flot/jquery.flot.js"></script>
+    <script type="text/javascript" src="priv/ui.datepicker.js"></script>
+    <script type="text/javascript" src="priv/script.js"></script>
+    
+    <style type="text/css">
+      @import "priv/style.css";
+    </style>
+    
+  </head>
+  
+  <body>
+
+    <div id="date">
+      <div id="current"><label>currently viewing : </label> <span></span></div>
+      <div id="datepicker"></div>
+    </div>
+
+    <h1>web@conference.econnrefused.com</h1>
+    <h2>logs / statistics</h2>
+    <div id="graph" style="width:400px; height:200px;"></div>
+    <div id="log"></div>
+  </body>
+</html>
