@@ -9,10 +9,10 @@ h2 { font: bold 14px sans-serif; color:#888; }
 
 #current { padding:4px; }
 #current label { color:#999; }
-.date { color:#999; display:block; width:60px; float:left; text-align:right; position:absolute; }
-.name { font-weight:bold; color:green; display:block; width:100px; float:left; text-align:right; left:76px; position:absolute; overflow:hidden; }
-.msg { margin-left:170px; }
-.notice { margin-left:170px; color:#AAA; }
+.date { color:#999; width:60px; text-align:right; vertical-align:top;}
+.name { font-weight:bold; color:green; width:90px; text-align:right; overflow:hidden; vertical-align:top; display:block; }
+.msg { padding-left:5px; }
+.notice { color:#AAA; }
 
 #graph { width:400px; height:200px; margin-top:20px;}
 
