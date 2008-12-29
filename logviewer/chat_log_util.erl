@@ -9,9 +9,9 @@
 -define(ROOM,    "web@conference.econnrefused.com").
 
 start(clean) ->
-    F    = fun(?LOG_PATH++X) -> 
-		   stats(filename:dirname(X)++"/"++filename:basename(X,".txt"))
-	   end,
+    F = fun(?LOG_PATH++X) -> 
+                stats(filename:dirname(X)++"/"++filename:basename(X,".txt"))
+        end,
     lists:map(F,filelib:wildcard(?LOG_PATH++"*/*/*/*.txt"));
 
 start(last) ->
@@ -59,17 +59,18 @@ save_hours(File,[H|Tail],Dict) ->
 
 get_timestamps(File,Dict) ->
     case io:get_line(File,"") of
-	eof ->
-	    file:close(File),
-	    {ok,Dict};
-
-	[$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$]|_Rest]  ->
-	    Time  = {list_to_integer([H1,H2]),round_down(list_to_integer([M1,M2]))},
-	    NDict = dict:update_counter(Time,1,Dict),
-	    get_timestamps(File,NDict);
-
-	_Else ->
-	    get_timestamps(File,Dict)
+        eof ->
+            file:close(File),
+            {ok,Dict};
+        
+        [$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$]|_Rest]  ->
+            Time  = {list_to_integer([H1,H2]),
+                     round_down(list_to_integer([M1,M2]))},
+            NDict = dict:update_counter(Time,1,Dict),
+            get_timestamps(File,NDict);
+        
+        _Else ->
+            get_timestamps(File,Dict)
     end.
 
 round_down(M) when M < 15 -> 00;
@@ -80,7 +81,9 @@ round_down(M) when M < 60 -> 45.
 gen_logs(InFile,OutFile) ->
     {ok,File}  = file:open(InFile,[read]),
     {ok,Out}   = file:open(OutFile,[write]),
+    io:format(Out,"<table>",[]),
     gen_log(File,Out),
+    io:format(Out,"</table>",[]),
     ok.
 
 dname([],_Acc) ->
@@ -94,24 +97,26 @@ dname([H|T],Acc) ->
 
 gen_log(File,Out) ->
 
+    Row = "<tr><td class='date'>~s</td>"
+        ++"<td class='name'>~s</td><td class='msg'>~s</td></tr>",
+
     case io:get_line(File,"") of
-	eof ->
-	    file:close(File),
-	    ok;
-
-	[$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$],32|Rest]  ->
-	    {X,Y} = case dname(Rest,[]) of 
-			{ok,Name,TheRest} ->
-			    {"<span class=\"name\">"++Name++"</span>",
-			     "<span class='msg'>"++TheRest++"</span>"};
-			no_name ->
-			    {"","<span class='notice'>"++Rest++"</span>"}
-		    end,
-
-	    io:format(Out,"<br /><span class='date'>~s</span>~s~s",[[$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$]],X,Y]),
-	    gen_log(File,Out);
-
-	_Else ->
-	    io:format(Out,"<span class=\"msg\">~s</span>",[_Else]),
-	    gen_log(File,Out)
+        eof ->
+            file:close(File),
+            ok;
+        
+        [$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$],32|Rest]  ->
+            {X,Y} = case dname(Rest,[]) of 
+                        {ok,Name,TheRest} ->
+                            {Name,TheRest};
+                        no_name ->
+                            {"","<span class='notice'>"++Rest++"</span>"}
+                    end,
+            
+            io:format(Out,Row,[[$[,H1,H2,$:,M1,M2,$:,_S1,_S2,$]],X,Y]),
+            gen_log(File,Out);
+        
+        _Else ->
+            io:format(Out,Row,["","",_Else]),
+            gen_log(File,Out)
     end.
