@@ -10,11 +10,22 @@ h2 { font: bold 14px sans-serif; color:#888; }
 #current { padding:4px; }
 #current label { color:#999; }
 .date { color:#999; width:60px; text-align:right; vertical-align:top;}
-.name { font-weight:bold; color:green; width:90px; text-align:right; overflow:hidden; vertical-align:top; display:block; }
+.name { font-weight:bold; width:90px; text-align:right; overflow:hidden; vertical-align:top; display:block; }
 .msg { padding-left:5px; }
 .notice { color:#AAA; }
 
 #graph { width:400px; height:200px; margin-top:20px;}
+
+.indigo { color:#00416A; }
+.alizarin { color:#E32636; }
+.tangerine { color:#FF9966; }
+.blue {  color: #333399; }
+.violet { color:#8A2BE2;  }
+.burgundy {  color: #900020; }
+.orange { color:#CC5500; }
+.cerise { color:#DE3163; }
+.springgreen { color: #177245; }
+
 
 /*datepicker*/
 /* Main Style Sheet for jQuery UI date picker */
