@@ -6,8 +6,8 @@
 -import(filename,[dirname/1,basename/2]).
 -export([start/1]).
 
--define(LOG_PATH,"/home/dale/Desktop/econnrefused.com/logs/").
--define(CUR_PATH,"/home/dale/Desktop/econnrefused.com/logviewer/").
+-define(LOG_PATH,"/home/daleharvey/www/econnrefused.com/logs/").
+-define(CUR_PATH,"/home/daleharvey/www/econnrefused.com/logviewer/").
 -define(ROOM,    "web@conference.econnrefused.com").
 -define(COLOURS, [alizarin,blue, indigo, springgreen,
                  burgundy,orange,cerise, tangerine,
@@ -105,7 +105,6 @@ get_colour(Dict,Name) ->
     case dict:is_key(Name,Dict) of
         true  -> {dict:fetch(Name,Dict),Dict};
         false ->
-            io:format("~p~n",[dict:to_list(Dict)]),
             [H|T] = dict:fetch(colours,Dict),
             D1 = dict:store(colours,T,Dict),
             {H,dict:store(Name,H,D1)}
