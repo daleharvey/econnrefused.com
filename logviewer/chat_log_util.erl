@@ -21,9 +21,10 @@ start(clean) ->
 
 start(last) ->
     {Y,M,D} = erlang:date(),
-    stats(lists:concat([?ROOM,"/",Y,"/",M,"/",D])).
+    F = fun(X) -> io_lib:format("~2.10.0B",[X]) end,
+    stats(lists:flatten(lists:concat([?ROOM,"/",Y,"/",F(M),"/",F(D)]))).
 
-stats(Path) ->
+stats(Path) -> 
     In  = ?LOG_PATH++Path++".txt",
     Out = ?CUR_PATH++Path,
     filelib:ensure_dir(Out),
