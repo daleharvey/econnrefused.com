@@ -30,3 +30,5 @@ p { margin:10px 0px; }
 .button span { color:#999; }
 .button img { float:left; margin-right:10px;}
 dt { margin-top:15px; font:bold 12px Arial,sans-serif; }
+#twitter h3 { font:normal 10px Rockwell, serif; color:#AAAAAA; }
+#twitter div { margin-bottom:10px; }
